@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvCapital_nameOfCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvCapital_nameOfCapital"
+        android:layout_marginHorizontal="15dp"
+        android:text="Country name"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvCapital_nameOfCapital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCapital_nameOfCountry"
+        android:layout_marginHorizontal="15dp"
+        android:textSize="20sp"
+        android:text="Capital name"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/ivCapital_imageFlag"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvCapital_nameOfCountry"
+        app:layout_constraintBottom_toBottomOf="@id/tvCapital_nameOfCapital"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/uzb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1.7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#B0000000"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
